@@ -1,0 +1,217 @@
+css
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+/* Navigation */
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd60a;
+}
+
+/* Common Section */
+
+section{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+section h2{
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+/* About */
+
+.about p{
+    text-align:center;
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+}
+
+/* Skills */
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill-box div{
+    background:#0077b6;
+    color:white;
+    padding:12px 22px;
+    border-radius:25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.skill-box div:hover{
+    background:#023e8a;
+    transform:scale(1.05);
+}
+
+/* Projects */
+
+.project-card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    max-width:600px;
+    margin:30px auto;
+    text-align:center;
+}
+
+.project-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.project-card h3{
+    color:#0077b6;
+    margin-bottom:10px;
+}
+
+/* Resume */
+
+.resume{
+    text-align:center;
+}
+
+.resume p{
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0077b6;
+    color:white;
+    padding:14px 30px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#023e8a;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.profile{
+    width:140px;
+    height:140px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.skill-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.project-card{
+    width:95%;
+}
+
+}
+
